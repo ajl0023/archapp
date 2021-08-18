@@ -3,8 +3,7 @@ const leftContainer = document.getElementById("left-container-scroll");
 const rightContainer = document.getElementById("right-container-scroll");
 let shouldScroll = true;
 
-const button = document.getElementById("test-button");
-const button2 = document.getElementById("test-button2");
+
 let windowHeight = window.innerHeight;
 let calcWindowHeight = 0;
 
