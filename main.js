@@ -37,7 +37,7 @@ window.addEventListener("wheel", function (e) {
     rightContainer.style.transform = `translate3d(0px, ${currentContainerSizeRight}px, 0px)`;
     this.setTimeout(() => {
       shouldScroll = true;
-    }, 2000);
+    }, 1100);
 
     shouldScroll = false;
   }
@@ -49,7 +49,7 @@ window.addEventListener("wheel", function (e) {
     rightContainer.style.transform = `translate3d(0px, ${currentContainerSizeRight}px, 0px)`;
     this.setTimeout(() => {
       shouldScroll = true;
-    }, 2000);
+    }, 1100);
     shouldScroll = false;
   }
 });
