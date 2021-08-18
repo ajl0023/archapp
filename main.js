@@ -14,7 +14,7 @@ let calcWindowHeight = 0;
 
 let currentPage = 0;
 let currentContainerSizeLeft = 0;
-let currentContainerSizeRight = -windowHeight * 2;
+let currentContainerSizeRight = -windowHeight  * 2;
 
 rightContainer.style.transform = `translate3d(0px, ${currentContainerSizeRight}px, 0px)`;
 
@@ -34,7 +34,9 @@ window.addEventListener("wheel", function (e) {
     currentContainerSizeRight += windowHeight;
     console.log(currentContainerSizeLeft);
     leftContainer.style.transform = `translate3d(0px, -${currentContainerSizeLeft}px, 0px)`;
-    rightContainer.style.transform = `translate3d(0px, ${currentContainerSizeRight}px, 0px)`;
+    rightContainer.style.transform = `translate3d(0px, ${
+      currentContainerSizeRight
+    }px, 0px)`;
     this.setTimeout(() => {
       shouldScroll = true;
     }, 1100);
@@ -46,7 +48,9 @@ window.addEventListener("wheel", function (e) {
     currentContainerSizeRight -= windowHeight;
     currentPage -= 1;
     leftContainer.style.transform = `translate3d(0px, -${currentContainerSizeLeft}px, 0px)`;
-    rightContainer.style.transform = `translate3d(0px, ${currentContainerSizeRight}px, 0px)`;
+    rightContainer.style.transform = `translate3d(0px, ${
+      currentContainerSizeRight
+    }px, 0px)`;
     this.setTimeout(() => {
       shouldScroll = true;
     }, 1100);

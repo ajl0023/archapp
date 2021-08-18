@@ -1,7 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <script defer src="./main.js"></script>
-<link rel="stylesheet" href="mystyle.css">
+<link rel="stylesheet" href="./styles/mystyle.css">
+<link rel="stylesheet" href="./styles/hamburger-icon.css">
+<link rel="stylesheet" href="./styles/discover.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
 
 <head>
     <meta charset="UTF-8">
@@ -9,26 +16,139 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<div style="position: fixed; z-index:50;" style="display: flex; gap: 23px;">
-    <!-- <button id='test-button'>sdfsdfsdf</button>
-    <button id='test-button2'>sdf23232332</button> -->
-</div>
+
+
 
 <body>
 
-    <div style="transform:translate3d(0px, 0px, 0px)" id='left-container-scroll' class="left-container">
-        <div class="left-inner">
-            <img src="./skyline-bce50132.jpg" alt="">
-            <div style="background-color: blue; height:100vh"></div>
-            <div style="background-color: greens; height:100vh"></div>
-        </div>
-    </div>
-    <div id='right-container-scroll' class="right-container">
-        <div class="right-inner">
+    <nav class="nav-container">
+        <div class="nav-left-container">
+            <div class="burger-container">
+                <input type="checkbox" id="burger-trigger" class="burger-input" />
+                <label for="burger-trigger" class="burger-label">
+                    <span class="main-trigger-icon-container">
+                        <i class="main-trigger-icon"></i>
+                    </span>
+                </label>
+                <div class="side-menu-container">
+                    <ul class="side-menu-item-container">
+                        <li>close</li>
+                        <li>home</li>
+                        <li>malibu life</li>
+                        <li>discover</li>
+                        <li>equestrian</li>
+                        <li>video</li>
+                        <li>pictures</li>
+                        <li>contact</li>
+                        <li>
+                            <div class="sidebar-logo-container">
+                                <img class="sidebar-logo" src="./images/logo-black.png" alt="">
 
-            <div style="background-color: black; height:100vh"></div>
-            <div style="background-color: red; height:100vh"></div>
-            <img src="./tower-8a9cdb08.jpg" alt="">
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="header-mask"></div>
+            </div>
+            <h4>Menu</h4>
+        </div>
+        <div class="nav-logo-container">
+            <img class="nav-logo" src="./images/logo-white.png" alt="">
+        </div>
+    </nav>
+    <div class="scroll-wrapper">
+        <div style="transform:translate3d(0px, 0px, 0px)" id='left-container-scroll' class="left-container">
+            <div class="left-inner">
+                <div class="landing-page-left-container">
+                    <div class="landing-page-left">
+                        <div class="logo-container">
+                            <img class="logo" src="./images/Maliview Logo Left.png" alt="">
+
+                        </div>
+
+                    </div>
+                    <span>
+                        <h5 class="landing-text-description">33340 mul</h5>
+                    </span>
+
+                </div>
+                <div class="discover-container">
+                    <h5 class="discover-header">
+                        discover
+                    </h5>
+                    <p class="discover-text">Maliview Estates. This unique architectural design by Amit Apel Design,
+                        Inc. presents a style of
+                        its own. The Worldwide
+                        architect has received multiple awards and Amit Apel, Inc. was most recently recognized in its
+                        hometown as one of the
+                        best firms by Home Builder Digest.
+
+                    <p class="discover-text">The villa will have open space plan with high ceilings with a touch of
+                        nature coming indoors. The
+                        home includes 4
+                        perfectly placed bedrooms with views to admire the scenery as well as 4.5 bathrooms. All of the
+                        interior will be
+                        featuring custom interior design by Amit Apel Design, Inc. From an infinity pool you will be
+                        enjoying the ocean in the
+                        horizon, the view of Santa Monica Mountains, and overwhelming sunrises, and sunsets.</p>
+
+                    <p class="discover-text">Currently under construction with a completion date early fall. Please note
+                        that both exterior
+                        and
+                        interior paint colors
+                        can be changed.</p>
+                </div>
+
+
+                <div class="discover-right-container">
+                    <img class="discover-image" src="./images/mulholland.jpg" alt="">
+                </div>
+
+            </div>
+        </div>
+        <div id='right-container-scroll' class="right-container">
+            <div class="right-inner">
+
+                <div class="discover-container">
+                    <h5 class="discover-header">
+                        discover
+                    </h5>
+                    <p class="discover-text">This equestrian property will present a barn with stalls on a lower portion
+                        of a four-acre space with its own separate
+                        driveway and plenty of room for the horses, other equestrians, or your trailer. You will have
+                        access to trails directly
+                        from the property and a creek of your own. You can call this paradise your home!
+
+                    <p class="discover-text">(More Equestrian Info Here)</p>
+
+                    <p class="discover-text">As much as it feels remote, you will be only 15 minutes away from PCH and
+                        less than 20 minutes away from Westlake
+                        Village. Great school district with plenty of activities. Come by to see this beautifully
+                        planned home in the making for
+                        yourself.</p>
+                </div>
+                <div class="discover-right-container">
+                    <img class="discover-image" src="./images/maliview.jpg" alt="">
+                </div>
+                <div class="landing-page-right-container">
+                    <div class="landing-page-right">
+                        <div class="logo-container">
+                            <img class="logo" src="./images/Maliview Logo Right.png" alt="">
+                        </div>
+
+                    </div>
+                    <span>
+                        <h5 class="landing-text-description">holland highway</h5>
+                    </span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+    <div class="arrow-container">
+        <div class="arrow">
 
         </div>
     </div>
