@@ -5,6 +5,7 @@
 
 body{
     display: flex;
+    overflow-y: hidden;
 }
 .right-container{
     width: 50vw;
@@ -23,7 +24,7 @@ body{
 .left-container {
     width: 50vw;
     height: 100vh;
-    transform: translate3d(0px, 0px, 0px);
+ 
     transition-timing-function: linear;
     transition: all 0.7s ease-out;
  
@@ -41,5 +42,6 @@ body{
 .right-container{
      width: 50vw;
      height: 100vh;
+   
      transition: all 0.7s ease-out;
 }

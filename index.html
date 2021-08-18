@@ -9,24 +9,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<div style="position: fixed; z-index:50;" style="display: flex; gap: 23px;" >
+<div style="position: fixed; z-index:50;" style="display: flex; gap: 23px;">
     <button id='test-button'>sdfsdfsdf</button>
-    <button id='test-button2' >sdf23232332</button>
+    <button id='test-button2'>sdf23232332</button>
 </div>
 
 <body>
 
-    <div id='left-container-scroll' class="left-container">
+    <div style="transform:translate3d(0px, 0px, 0px)" id='left-container-scroll' class="left-container">
         <div class="left-inner">
             <img src="./skyline-bce50132.jpg" alt="">
-            
+            <div style="background-color: blue; height:100vh"></div>
+            <div style="background-color: greens; height:100vh"></div>
         </div>
     </div>
-    <div  id='right-container-scroll' class="right-container">
+    <div style="transform:translate3d(0px, -1874px, 0px)" id='right-container-scroll' class="right-container">
         <div class="right-inner">
+
             <div style="background-color: black; height:100vh"></div>
+            <div style="background-color: red; height:100vh"></div>
             <img src="./tower-8a9cdb08.jpg" alt="">
-          
+
         </div>
     </div>
 </body>
