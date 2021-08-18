@@ -1,3 +1,3 @@
 git add .
-git commit -m "fixed scroll animation"
+git commit -m "scroll animation now should be working"
 git push origin main
