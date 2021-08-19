@@ -4,6 +4,7 @@
 <link rel="stylesheet" href="./styles/mystyle.css">
 <link rel="stylesheet" href="./styles/hamburger-icon.css">
 <link rel="stylesheet" href="./styles/discover.css">
+<link rel="stylesheet" href="./styles/modal.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link
@@ -21,39 +22,41 @@
 
 <body>
 
-    <nav class="nav-container">
-        <div class="nav-left-container">
+    <nav class="nav-wrapper">
+        <div class="nav-container">
+            <div class="nav-left-container">
 
-            <input type="checkbox" id="burger-trigger" class="burger-input" />
-            <label for="burger-trigger" class="burger-label">
-                <span class="main-trigger-icon-container">
-                    <i class="main-trigger-icon"></i>
-                </span>
-            </label>
-            <label class="nav-menu-label" for="burger-trigger"><span>menu</span></label>
-            <div class="side-menu-container">
-                <ul class="side-menu-item-container">
-                    <li>home</li>
-                    <li>malibu life</li>
-                    <li>discover</li>
-                    <li>equestrian</li>
-                    <li>video</li>
-                    <li>pictures</li>
-                    <li>contact</li>
-                    <li>
-                        <div class="sidebar-logo-container">
-                            <img class="sidebar-logo" src="./images/logo-black.png" alt="">
+                <input type="checkbox" id="burger-trigger" class="burger-input" />
+                <label for="burger-trigger" class="burger-label">
+                    <span class="main-trigger-icon-container">
+                        <i class="main-trigger-icon"></i>
+                    </span>
+                </label>
+                <label class="nav-menu-label" for="burger-trigger"><span>menu</span></label>
+                <div class="side-menu-container">
+                    <ul class="side-menu-item-container">
+                        <li>home</li>
+                        <li>malibu life</li>
+                        <li>discover</li>
+                        <li>equestrian</li>
+                        <li>video</li>
+                        <li>pictures</li>
+                        <li>contact</li>
+                        <li>
+                            <div class="sidebar-logo-container">
+                                <img class="sidebar-logo" src="./images/logo-black.png" alt="">
 
-                        </div>
-                    </li>
-                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="header-mask"></div>
             </div>
-            <div class="header-mask"></div>
-        </div>
 
 
-        <div class="nav-logo-container">
-            <img class="nav-logo" src="./images/logo-white.png" alt="">
+            <div class="nav-logo-container">
+                <img class="nav-logo" src="./images/logo-white.png" alt="">
+            </div>
         </div>
     </nav>
     <div class="scroll-wrapper">
@@ -75,7 +78,10 @@
                 <div class="discover-right-container">
                     <img class="discover-image" src="./images/Malibu.jpg" alt="">
                 </div>
-                <div class="discover-container">
+                <div class="discover-container  brown-bg">
+                    <div class="hidden-logo-container">
+                        <img src="./images/hiddenLogoBrown.png" class="hidden-logo-brown" alt="">
+                    </div>
                     <h5 class="discover-header">
                         discover
                     </h5>
@@ -106,13 +112,37 @@
                 <div class="discover-right-container">
                     <img class="discover-image" src="./images/mulholland.jpg" alt="">
                 </div>
+                <div class="discover-container brown-bg">
+                    <div class="hidden-logo-container">
+                        <img src="./images/hiddenLogoGrey.png" class="hidden-logo-brown" alt="">
+                    </div>
+                    <h5 class="discover-header">
+                        video render
+                    </h5>
+                    <p class="discover-text">Take a dive into Maliview with our 3D rendering. To get a feeling of the
+                        completed project and vision, please click on
+                        the video to the right.
 
+
+
+                </div>
             </div>
+
         </div>
         <div id='right-container-scroll' class="right-container">
             <div class="right-inner">
 
-                <div class="discover-container">
+
+                <div id='modal-trigger' class="discover-right-container blur expand-hover ">
+                    <img class="play-button" src="./images/playButton.png" alt="">
+                    <img class="discover-image   " src="./images/33340 Mulholland IMG 1A.jpg" alt="">
+
+
+                </div>
+                <div class="discover-container grey-bg">
+                    <div class="hidden-logo-container">
+                        <img src="./images/hiddenLogoGrey.png" class="hidden-logo-brown" alt="">
+                    </div>
                     <h5 class="discover-header">
                         equestrian
                     </h5>
@@ -129,11 +159,15 @@
                         Village. Great school district with plenty of activities. Come by to see this beautifully
                         planned home in the making for
                         yourself.</p>
+
                 </div>
                 <div class="discover-right-container">
                     <img class="discover-image" src="./images/maliview.jpg" alt="">
                 </div>
-                <div class="discover-container">
+                <div class="discover-container grey-bg">
+                    <div class="hidden-logo-container">
+                        <img src="./images/hiddenLogoGrey.png" class="hidden-logo-brown" alt="">
+                    </div>
                     <h5 class="discover-header">
                         malibu
                     </h5>

@@ -25,8 +25,82 @@
 }
 .discover-right-container {
   height: 100vh;
+  .play-button {
+    position: absolute;
+    width: 160px;
+    position: absolute;
+    top: 50%; /* position the top  edge of the element at the middle of the parent */
+    left: 50%; /* position the left edge of the element at the middle of the parent */
+
+    transform: translate(-50%, -50%);
+    height: auto;
+    z-index: 5;
+    object-fit: cover;
+  }
   .discover-image {
     width: 100%;
     object-fit: cover;
+    transition: all 0.7s ease;
+  }
+}
+.brown-bg {
+  position: relative;
+  overflow: hidden;
+  .hidden-logo-container {
+    width: 550px;
+    position: absolute;
+    bottom: -200px;
+    left: 0;
+    .hidden-logo-brown {
+      width: 100%;
+      height: auto;
+
+      object-fit: cover;
+    }
+  }
+  background-color: #a4632e;
+}
+.blur {
+  left: 0;
+  right: 0;
+  z-index: 0;
+
+  &::before {
+    position: absolute;
+    content: "";
+    height: 100%;
+    display: block;
+    left: 0;
+    right: 0;
+    top: 0;
+
+    backdrop-filter: blur(5px);
+  }
+}
+.expand-hover {
+  overflow: hidden;
+  &:hover {
+    .discover-image {
+      transform: scale(1.5);
+      transition: all 0.7s ease;
+    }
+  }
+}
+
+.grey-bg {
+  position: relative;
+  overflow: hidden;
+  .hidden-logo-container {
+    width: 550px;
+    position: absolute;
+    bottom: -200px;
+    right: 0;
+
+    .hidden-logo-brown {
+      width: 100%;
+      height: auto;
+
+      object-fit: cover;
+    }
   }
 }

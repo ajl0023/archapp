@@ -38,8 +38,94 @@
   height: 100vh;
 }
 
+.discover-right-container .play-button {
+  position: absolute;
+  width: 160px;
+  position: absolute;
+  top: 50%;
+  /* position the top  edge of the element at the middle of the parent */
+  left: 50%;
+  /* position the left edge of the element at the middle of the parent */
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  height: auto;
+  z-index: 5;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .discover-right-container .discover-image {
   width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-transition: all 0.7s ease;
+  transition: all 0.7s ease;
+}
+
+.brown-bg {
+  position: relative;
+  overflow: hidden;
+  background-color: #a4632e;
+}
+
+.brown-bg .hidden-logo-container {
+  width: 550px;
+  position: absolute;
+  bottom: -200px;
+  left: 0;
+}
+
+.brown-bg .hidden-logo-container .hidden-logo-brown {
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.blur {
+  left: 0;
+  right: 0;
+  z-index: 0;
+}
+
+.blur::before {
+  position: absolute;
+  content: "";
+  height: 100%;
+  display: block;
+  left: 0;
+  right: 0;
+  top: 0;
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+}
+
+.expand-hover {
+  overflow: hidden;
+}
+
+.expand-hover:hover .discover-image {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+  -webkit-transition: all 0.7s ease;
+  transition: all 0.7s ease;
+}
+
+.grey-bg {
+  position: relative;
+  overflow: hidden;
+}
+
+.grey-bg .hidden-logo-container {
+  width: 550px;
+  position: absolute;
+  bottom: -200px;
+  right: 0;
+}
+
+.grey-bg .hidden-logo-container .hidden-logo-brown {
+  width: 100%;
+  height: auto;
   -o-object-fit: cover;
      object-fit: cover;
 }
