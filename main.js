@@ -14,29 +14,25 @@ let calcWindowHeight = 0;
 
 let currentPage = 0;
 let currentContainerSizeLeft = 0;
-let currentContainerSizeRight = -windowHeight  * 2;
+let currentContainerSizeRight = -windowHeight * 3;
 
 rightContainer.style.transform = `translate3d(0px, ${currentContainerSizeRight}px, 0px)`;
 
 window.addEventListener("wheel", function (e) {
-  if (rightContainer.style.transition !== "all 1s ease-out"){
-      rightContainer.style.transition = "all 1s ease-out";
+  if (rightContainer.style.transition !== "all 1s ease-out") {
+    rightContainer.style.transition = "all 1s ease-out";
   }
-    if (e.deltaY > 0) {
-      console.log("scrolling down");
-    }
+
   if (e.deltaY < 0 && currentPage === 0) {
     return;
   }
-  if (e.deltaY > 0 && shouldScroll) {
+  if (e.deltaY > 0 && shouldScroll && currentPage < 3) {
     currentPage += 1;
     currentContainerSizeLeft += windowHeight;
     currentContainerSizeRight += windowHeight;
     console.log(currentContainerSizeLeft);
     leftContainer.style.transform = `translate3d(0px, -${currentContainerSizeLeft}px, 0px)`;
-    rightContainer.style.transform = `translate3d(0px, ${
-      currentContainerSizeRight
-    }px, 0px)`;
+    rightContainer.style.transform = `translate3d(0px, ${currentContainerSizeRight}px, 0px)`;
     this.setTimeout(() => {
       shouldScroll = true;
     }, 1100);
@@ -48,12 +44,11 @@ window.addEventListener("wheel", function (e) {
     currentContainerSizeRight -= windowHeight;
     currentPage -= 1;
     leftContainer.style.transform = `translate3d(0px, -${currentContainerSizeLeft}px, 0px)`;
-    rightContainer.style.transform = `translate3d(0px, ${
-      currentContainerSizeRight
-    }px, 0px)`;
+    rightContainer.style.transform = `translate3d(0px, ${currentContainerSizeRight}px, 0px)`;
     this.setTimeout(() => {
       shouldScroll = true;
     }, 1100);
     shouldScroll = false;
   }
+  console.log(currentPage);
 });

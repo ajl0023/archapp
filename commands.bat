@@ -1,3 +1,3 @@
 git add .
-git commit -m "minor edits to tempaltes"
+git commit -m "added malibu page"
 git push origin main
