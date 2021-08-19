@@ -19,8 +19,8 @@ let currentContainerSizeRight = -windowHeight  * 2;
 rightContainer.style.transform = `translate3d(0px, ${currentContainerSizeRight}px, 0px)`;
 
 window.addEventListener("wheel", function (e) {
-  if (rightContainer.style.transition !== "all 0.7s ease-out"){
-      rightContainer.style.transition = "all 0.7s ease-out";
+  if (rightContainer.style.transition !== "all 1s ease-out"){
+      rightContainer.style.transition = "all 1s ease-out";
   }
     if (e.deltaY > 0) {
       console.log("scrolling down");

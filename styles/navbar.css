@@ -32,7 +32,7 @@
 }
 
 .nav-container .nav-logo-container {
-  width: 90px;
+  width: 150px;
   height: auto;
 }
 
@@ -41,5 +41,9 @@
      object-fit: cover;
   height: 100%;
   width: 100%;
+}
+
+.nav-menu-label {
+  cursor: pointer;
 }
 /*# sourceMappingURL=navbar.css.map */

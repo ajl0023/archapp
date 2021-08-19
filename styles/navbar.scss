@@ -23,7 +23,7 @@
     gap: 9px;
   }
   .nav-logo-container {
-    width: 90px;
+    width: 150px;
     height: auto;
     .nav-logo {
       object-fit: cover;
@@ -31,4 +31,7 @@
       width: 100%;
     }
   }
+}
+.nav-menu-label {
+  cursor: pointer;
 }
