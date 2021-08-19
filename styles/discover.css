@@ -16,7 +16,7 @@
           justify-content: center;
   gap: 30px;
   color: white;
-  padding: 0 150px;
+  padding: 0 250px;
 }
 
 .discover-container .discover-header {
@@ -27,6 +27,7 @@
 .discover-container .discover-text {
   font-weight: 300;
   text-align: left;
+  font-size: 12px;
   width: 100%;
   word-spacing: 3px;
   letter-spacing: 1.3px;

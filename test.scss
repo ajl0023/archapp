@@ -1,0 +1,23 @@
+li {
+  display: inline-block;
+  width: 100px;
+  font-size: 30px;
+  color: white;
+  text-align: center;
+}
+
+li:nth-child(1) {
+  background: #333;
+}
+li:nth-child(2) {
+  background: #666;
+}
+li:nth-child(3) {
+  background: #999;
+}
+body {
+  margin: 16px;
+}
+ul {
+  display: flex;
+}
